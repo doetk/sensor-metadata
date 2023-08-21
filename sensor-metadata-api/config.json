@@ -1,0 +1,17 @@
+{
+  "server_config": {
+    "addr": ":8080",
+    "read_timeout_sec": 90,
+    "write_timeout_sec": 90,
+    "idle_timeout_sec": 0
+  },
+  "db_config": {
+    "host": "database",
+    "port": "5432",
+    "db_name": "sensor_metadata",
+    "user": "postgres",
+    "password": "Pass2023!",
+    "schema_name": "metadata",
+    "ssl_mode": "disable"
+  }
+}

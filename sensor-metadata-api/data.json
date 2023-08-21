@@ -1,0 +1,265 @@
+{
+  "type": "FeatureCollection",
+  "query": [
+    "berlin"
+  ],
+  "features": [
+    {
+      "id": "place.115770",
+      "type": "Feature",
+      "place_type": [
+        "region",
+        "place"
+      ],
+      "relevance": 1,
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpBY1E2",
+        "wikidata": "Q64",
+        "short_code": "DE-BE"
+      },
+      "text": "Berlin",
+      "place_name": "Berlin, Germany",
+      "bbox": [
+        13.08836,
+        52.338261,
+        13.761131,
+        52.675502
+      ],
+      "center": [
+        13.3888599,
+        52.5170365
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3888599,
+          52.5170365
+        ]
+      },
+      "context": [
+        {
+          "id": "country.8762",
+          "mapbox_id": "dXJuOm1ieHBsYzpJam8",
+          "wikidata": "Q183",
+          "short_code": "de",
+          "text": "Germany"
+        }
+      ]
+    },
+    {
+      "id": "poi.644245173809",
+      "type": "Feature",
+      "place_type": [
+        "poi"
+      ],
+      "relevance": 1,
+      "properties": {
+        "wikidata": "Q9689",
+        "landmark": true,
+        "address": "Flughafen 1",
+        "category": "airport",
+        "foursquare": "4adcda91f964a520ae4b21e3",
+        "maki": "airport"
+      },
+      "text": "Berlin-Schönefeld Airport (SXF)",
+      "place_name": "Berlin-Schönefeld Airport (SXF), Flughafen 1, Schönefeld, Brandenburg 12529, Germany",
+      "center": [
+        13.5113245,
+        52.374990249999996
+      ],
+      "geometry": {
+        "coordinates": [
+          13.5113245,
+          52.374990249999996
+        ],
+        "type": "Point"
+      },
+      "context": [
+        {
+          "id": "postcode.5991994",
+          "mapbox_id": "dXJuOm1ieHBsYzpXMjQ2",
+          "text": "12529"
+        },
+        {
+          "id": "place.71108666",
+          "mapbox_id": "dXJuOm1ieHBsYzpCRDBJT2c",
+          "wikidata": "Q521475",
+          "text": "Schönefeld"
+        },
+        {
+          "id": "region.99386",
+          "mapbox_id": "dXJuOm1ieHBsYzpBWVE2",
+          "wikidata": "Q1208",
+          "short_code": "DE-BB",
+          "text": "Brandenburg"
+        },
+        {
+          "id": "country.8762",
+          "mapbox_id": "dXJuOm1ieHBsYzpJam8",
+          "wikidata": "Q183",
+          "short_code": "de",
+          "text": "Germany"
+        }
+      ]
+    },
+    {
+      "id": "place.25995500",
+      "type": "Feature",
+      "place_type": [
+        "place"
+      ],
+      "relevance": 1,
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpBWXlvN0E",
+        "wikidata": "Q614184"
+      },
+      "text": "Berlin",
+      "place_name": "Berlin, Maryland, United States",
+      "bbox": [
+        -75.364989,
+        38.1417465,
+        -75.087625,
+        38.4078
+      ],
+      "center": [
+        -75.217689,
+        38.322615
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.217689,
+          38.322615
+        ]
+      },
+      "context": [
+        {
+          "id": "district.25396972",
+          "mapbox_id": "dXJuOm1ieHBsYzpBWU9HN0E",
+          "wikidata": "Q494072",
+          "text": "Worcester County"
+        },
+        {
+          "id": "region.124140",
+          "mapbox_id": "dXJuOm1ieHBsYzpBZVRz",
+          "wikidata": "Q1391",
+          "short_code": "US-MD",
+          "text": "Maryland"
+        },
+        {
+          "id": "country.8940",
+          "mapbox_id": "dXJuOm1ieHBsYzpJdXc",
+          "wikidata": "Q30",
+          "short_code": "us",
+          "text": "United States"
+        }
+      ]
+    },
+    {
+      "id": "place.25970924",
+      "type": "Feature",
+      "place_type": [
+        "place"
+      ],
+      "relevance": 1,
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpBWXhJN0E",
+        "wikidata": "Q1086827"
+      },
+      "text": "Berlin",
+      "place_name": "Berlin, New Jersey, United States",
+      "bbox": [
+        -74.977941,
+        39.707276,
+        -74.867677,
+        39.809363
+      ],
+      "center": [
+        -74.929054,
+        39.791226
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.929054,
+          39.791226
+        ]
+      },
+      "context": [
+        {
+          "id": "district.3016428",
+          "mapbox_id": "dXJuOm1ieHBsYzpMZ2Jz",
+          "wikidata": "Q497810",
+          "text": "Camden County"
+        },
+        {
+          "id": "region.156908",
+          "mapbox_id": "dXJuOm1ieHBsYzpBbVRz",
+          "wikidata": "Q1408",
+          "short_code": "US-NJ",
+          "text": "New Jersey"
+        },
+        {
+          "id": "country.8940",
+          "mapbox_id": "dXJuOm1ieHBsYzpJdXc",
+          "wikidata": "Q30",
+          "short_code": "us",
+          "text": "United States"
+        }
+      ]
+    },
+    {
+      "id": "place.26036460",
+      "type": "Feature",
+      "place_type": [
+        "place"
+      ],
+      "relevance": 1,
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpBWTFJN0E"
+      },
+      "text": "Berlin",
+      "place_name": "Berlin, Connecticut, United States",
+      "bbox": [
+        -72.840244,
+        41.554195,
+        -72.712381,
+        41.652706
+      ],
+      "center": [
+        -72.775655,
+        41.602847
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.775655,
+          41.602847
+        ]
+      },
+      "context": [
+        {
+          "id": "district.10020588",
+          "mapbox_id": "dXJuOm1ieHBsYzptT2Jz",
+          "wikidata": "Q54236",
+          "text": "Hartford County"
+        },
+        {
+          "id": "region.361708",
+          "mapbox_id": "dXJuOm1ieHBsYzpCWVRz",
+          "wikidata": "Q779",
+          "short_code": "US-CT",
+          "text": "Connecticut"
+        },
+        {
+          "id": "country.8940",
+          "mapbox_id": "dXJuOm1ieHBsYzpJdXc",
+          "wikidata": "Q30",
+          "short_code": "us",
+          "text": "United States"
+        }
+      ]
+    }
+  ],
+  "attribution": "NOTICE: © 2023 Mapbox and its suppliers. All rights reserved. Use of this data is subject to the Mapbox Terms of Service (https://www.mapbox.com/about/maps/). This response and the information it contains may not be retained. POI(s) provided by Foursquare."
+}

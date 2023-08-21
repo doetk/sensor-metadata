@@ -1,0 +1,36 @@
+version: "3.8"
+services:
+  frontend:
+    container_name: sensor-metadata-ui
+    build:
+      context: ./sensor-metadata-ui
+      dockerfile: Dockerfile
+    ports:
+      - '3000:80'
+    environment:
+      - NODE_ENV=production
+
+  backend:
+    container_name: sensor-metadata-api
+    build:
+      context: ./sensor-metadata-api
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database
+
+  database:
+    container_name: sensor-metadata-db
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "Pass2023!"
+      POSTGRES_DB: "sensor_metadata"
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:

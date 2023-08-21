@@ -1,0 +1,139 @@
+basePath: /api/v1/
+definitions:
+  db.Location:
+    properties:
+      latitude:
+        type: number
+      longitude:
+        type: number
+    type: object
+  db.SensorMetadata:
+    properties:
+      created_at:
+        type: string
+      description:
+        type: string
+      id:
+        type: string
+      location:
+        $ref: '#/definitions/db.Location'
+      name:
+        type: string
+      tags:
+        items:
+          type: string
+        type: array
+      updated_at:
+        type: string
+    type: object
+info:
+  contact:
+    email: info.tkdoe@gmail.com
+    name: Theo Doe
+    url: https://www.linkedin.com/in/tkdoe/
+  description: This is a single-binary sensor-metadata-application
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: Sensor Metadata API Application
+  version: "2.0"
+paths:
+  /sensor-metadata:
+    post:
+      consumes:
+      - application/json
+      description: Create a new sensor metadata
+      parameters:
+      - description: SensorMetadata
+        in: body
+        name: db_config.SensorMetadata
+        required: true
+        schema:
+          $ref: '#/definitions/db.SensorMetadata'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      summary: Create a new sensor metadata
+      tags:
+      - create
+  /sensor-metadata/{name}:
+    get:
+      consumes:
+      - application/json
+      description: Get info for a sensor
+      parameters:
+      - description: Sensor Name
+        in: path
+        name: name
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/db.SensorMetadata'
+        "404":
+          description: Not Found
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      summary: Get info for a sensor
+      tags:
+      - get
+    put:
+      consumes:
+      - application/json
+      description: Update sensor metadata
+      parameters:
+      - description: Sensor Name
+        in: path
+        name: name
+        required: true
+        type: string
+      - description: SensorMetadata
+        in: body
+        name: name
+        required: true
+        schema:
+          $ref: '#/definitions/db.SensorMetadata'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      summary: Update sensor metadata
+      tags:
+      - update
+swagger: "2.0"
