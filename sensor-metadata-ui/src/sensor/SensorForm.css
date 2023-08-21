@@ -1,0 +1,53 @@
+.sensor-form-container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+    width: 95%;
+    padding: 10px !important;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    text-align: center;
+}
+
+.error-message {
+    background-color: #ffcccc; /* Light red background */
+    color: #d9534f; /* Red text color */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d9534f;
+    border-radius: 4px;
+}
+
+.success-message {
+    background-color: #d4edda; /* Light green background */
+    color: #28a745; /* Green text color */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #28a745;
+    border-radius: 4px;
+}
